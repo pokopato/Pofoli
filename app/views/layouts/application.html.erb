@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- bootstrapで必要 -->
+  <meta name="viewport" content="width-device-width, initial-scale=1" /> <!-- bootstrapで必要 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> <!-- bootstrap.min.css読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery.min.js読み込み -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!-- bootstrap.min.js読み込み -->
+  <title>努力の結晶</title>
+  <script>
+  </script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/header' %>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>

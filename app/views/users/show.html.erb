@@ -1,0 +1,52 @@
+<%= content_tag(:span, flash.notice, class: 'notice') if flash.notice %>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default moji1">投稿する</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">初心者</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">中級者</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default"><%= link_to '質問部屋を作る', room_path %></button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">雑談する</button>
+  </div>
+</div>
+<br />
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="col-md-11 box1">
+      <%= image_tag "no_image.gif", id: 'avatar' %> <br />
+      <%= @user.name %> <br />
+      <%= @user.email %>
+    </div>
+  </div>
+  <div class="col-md-9 box4">
+    <div class="box3">
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+      <article class="box2">
+        <p>tetetetetetetetetetetetetetetetetetetetetetetet</p>
+      </article>
+    </div>
+  </div>
+</div>
